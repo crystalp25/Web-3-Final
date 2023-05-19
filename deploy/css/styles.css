@@ -1,11 +1,6 @@
 /* =============
     Mixins
 ============= */
-/* ---------------- Font Sizing ---------------- */
-html {
-  font-size: 100%;
-}
-
 /* ---------------- Media Queries ---------------- */
 /* =============
     Variables
@@ -330,6 +325,13 @@ template {
 /* =============
     Typography
 ============= */
+h1 {
+  font-family: "Nunito";
+  font-weight: 800;
+  padding: 10px 0 20px;
+  font-size: 55px;
+}
+
 /* =============
     Buttons
 ============= */

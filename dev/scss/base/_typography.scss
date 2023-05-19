@@ -1,3 +1,14 @@
 /* =============
     Typography
 ============= */
+
+@mixin display {
+    font-family: 'Nunito';
+    font-weight: 800;
+    padding: 10px 0 20px;
+}
+
+h1{
+    @include display();
+    font-size: 55px;
+}
