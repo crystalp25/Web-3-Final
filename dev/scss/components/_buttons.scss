@@ -4,7 +4,7 @@
 
 @mixin button($bg-color){
     background-color: $bg-color;
-    padding: 15px 30px; 
+    padding: 24px 8px; 
     text-decoration: none; 
     @include button-small();
 
