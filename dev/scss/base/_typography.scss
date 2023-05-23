@@ -2,13 +2,24 @@
     Typography
 ============= */
 
-@mixin display {
-    font-family: 'Nunito';
+@mixin titles {
+    font-family: 'Nunito', sans-serif;
     font-weight: 800;
-    padding: 10px 0 20px;
 }
 
+@mixin button-small {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 300;
+    color: white
+}
+
+
 h1{
-    @include display();
+    @include titles();
     font-size: 55px;
+}
+
+h2{
+    @include titles();
+    font-size: 40px;
 }

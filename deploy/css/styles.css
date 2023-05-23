@@ -326,15 +326,33 @@ template {
     Typography
 ============= */
 h1 {
-  font-family: "Nunito";
+  font-family: "Nunito", sans-serif;
   font-weight: 800;
-  padding: 10px 0 20px;
   font-size: 55px;
+}
+
+h2 {
+  font-family: "Nunito", sans-serif;
+  font-weight: 800;
+  font-size: 40px;
 }
 
 /* =============
     Buttons
 ============= */
+a.button {
+  background-color: #355C65;
+  padding: 15px 30px;
+  text-decoration: none;
+  font-family: "Nunito", sans-serif;
+  font-weight: 300;
+  color: white;
+}
+a.button:hover {
+  background-color: #349AB1;
+  transition: 0.3s;
+}
+
 /* =============
     Forms
 ============= */

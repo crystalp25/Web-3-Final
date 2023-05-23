@@ -2,6 +2,20 @@
     Buttons
 ============= */
 
-@mixin button($backgound-color){
+@mixin button($bg-color){
+    background-color: $bg-color;
+    padding: 15px 30px; 
+    text-decoration: none; 
+    @include button-small();
 
+    &:hover{
+        background-color: $RegTeal;
+        transition: .3s;
+    }
 }
+
+a.button{
+    @include button($DarkTeal)
+}
+
+
