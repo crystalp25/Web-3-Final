@@ -2,9 +2,39 @@
     Typography
 ============= */
 
-@mixin titles {
+@mixin extrabold {
     font-family: 'Nunito', sans-serif;
     font-weight: 800;
+}
+
+@mixin semibold {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+}
+
+@mixin bold {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+}
+
+@mixin medium {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 500;
+}
+
+@mixin regular {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+}
+
+@mixin light {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 300;
+}
+
+@mixin extralight {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 200;
 }
 
 @mixin button-small {
@@ -13,13 +43,28 @@
     color: white
 }
 
-
 h1{
-    @include titles();
+    @include extrabold();
     font-size: 55px;
 }
 
 h2{
-    @include titles();
+    @include extrabold();
     font-size: 40px;
 }
+
+h3{
+    @include semibold(); 
+    font-size: 45px;
+}
+
+h4{
+    @include semibold(); 
+    font-size: 37px;
+}
+
+
+
+
+
+

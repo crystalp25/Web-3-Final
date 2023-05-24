@@ -322,6 +322,29 @@ template {
 /* =============
     Base
 ============= */
+img {
+  max-width: 100%;
+}
+
+.section {
+  padding: 10px 20px;
+}
+@media (min-width: 1024px) {
+  .section {
+    padding: 150px 200px;
+  }
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 1024px) {
+  article {
+    flex-direction: row;
+  }
+}
+
 /* =============
     Typography
 ============= */
@@ -335,6 +358,18 @@ h2 {
   font-family: "Nunito", sans-serif;
   font-weight: 800;
   font-size: 40px;
+}
+
+h3 {
+  font-family: "Nunito", sans-serif;
+  font-weight: 600;
+  font-size: 45px;
+}
+
+h4 {
+  font-family: "Nunito", sans-serif;
+  font-weight: 600;
+  font-size: 37px;
 }
 
 /* =============
@@ -373,6 +408,12 @@ textarea {
 
 /* =============
     Navigation
+============= */
+/* =============
+    Header
+============= */
+/* =============
+    Footer
 ============= */
 /* =============
     Header
