@@ -473,11 +473,11 @@ header form input {
     display: inline;
   }
 }
-header #logos {
+header #account {
   display: none;
 }
 @media (min-width: 1024px) {
-  header #logos {
+  header #account {
     display: inline;
   }
 }

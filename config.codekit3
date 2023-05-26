@@ -281,6 +281,19 @@
       "q" : 90,
       "rq" : 75
     },
+    "\/deploy\/img\/header\/searchicon.png" : {
+      "ft" : 32768,
+      "iS" : 469,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/header\/searchicon.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
+    },
     "\/deploy\/img\/hero\/gallery1.png" : {
       "ft" : 32768,
       "iS" : 29400,
