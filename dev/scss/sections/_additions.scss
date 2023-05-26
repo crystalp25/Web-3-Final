@@ -1,0 +1,21 @@
+#additions{
+    
+    article{
+        display: flex;
+        justify-content: space-between; 
+    }
+
+    ul{
+        list-style: none;
+        display: flex;
+        gap: 20px;
+        li{
+            background-color: $CardPurple;
+            padding: 24px;
+            gap: 24px;
+            width: 418px;
+            height: 552px;
+        }
+    }
+
+}

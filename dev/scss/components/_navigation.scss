@@ -8,14 +8,15 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 16px 28px;
 
     #burger-button {
-
+        display: block;
         span,
         span::before,
         span::after {
             height: 5px;
-            width: 30px;
+            width: 34px;
             background-color: $MediumGrey;
         }
 
@@ -38,6 +39,9 @@ header {
     }
 
     #burger-container{
+        display: block;
+        position: relative;
+        z-index: 3;
         @include lg{
             display: none;
         }
@@ -47,7 +51,8 @@ header {
         ul{ 
             display: flex;
             list-style: none;
-            gap: 10px;
+            gap: 82px;
+            a:link{ text-decoration: none;}
         }
         display: none;
 
@@ -70,6 +75,7 @@ header {
             color: $StarGrey; 
             width: 348px;
             height: 45px;
+            border-radius: 20px; 
         }
 
         @include lg{
@@ -84,8 +90,6 @@ header {
             display: inline;
         }
     }
-
-
 
 
 }
