@@ -1,3 +1,91 @@
 /* =============
     Navigation
 ============= */
+
+header {
+    background-color: lightblue;
+    height: 77px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    #burger-button {
+
+        span,
+        span::before,
+        span::after {
+            height: 5px;
+            width: 30px;
+            background-color: $MediumGrey;
+        }
+
+        span {
+            display: block;
+            position: relative;
+
+            &::before {
+                position: absolute;
+                content: " ";
+                top: -10px;
+            }
+
+            &::after {
+                position: absolute;
+                content: " ";
+                top: 10px;
+            }
+        }
+    }
+
+    #burger-container{
+        @include lg{
+            display: none;
+        }
+    }
+
+    #main-menu{
+        ul{ 
+            display: flex;
+            list-style: none;
+            gap: 10px;
+        }
+        display: none;
+
+        @include lg{
+            display: inline;
+        }
+
+        &.show-menu{
+            display: inline;
+        }
+
+    }
+
+    form{
+        margin-left: auto;
+        display: none;
+        
+        input{
+            border: none;
+            color: $StarGrey; 
+            width: 348px;
+            height: 45px;
+        }
+
+        @include lg{
+            display: inline;
+        }
+    }
+
+    #logos{
+        display: none;
+
+        @include lg{
+            display: inline;
+        }
+    }
+
+
+
+
+}
