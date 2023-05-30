@@ -45,22 +45,30 @@
 
 h1{
     @include extrabold();
-    font-size: 55px;
 }
 
 h2{
-    @include extrabold();
-    font-size: 40px;
+    @include semibold();
 }
 
 h3{
-    @include semibold(); 
-    font-size: 45px;
+    @include bold(); 
 }
 
 h4{
-    @include semibold(); 
-    font-size: 37px;
+    @include medium(); 
+}
+
+h5{
+    @include regular(); 
+}
+
+h6{
+    @include extralight(); 
+}
+
+p{
+    @include light(); 
 }
 
 

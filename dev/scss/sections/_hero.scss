@@ -14,6 +14,39 @@
       flex-direction: column;
       gap: 40px;
 
+      #title{
+         h1{
+            font-size: 40px;
+         }
+         h3{
+            font-size: 18px;
+         }
+         h2{
+            font-size: 16px;
+         }
+      }
+      
+      aside{}
+
+      article{
+         h3{
+            font-size: 18px;
+            padding-bottom: 4px;
+         }
+         h2{
+            font-size: 16px;
+         }
+      }
+
+      ul{
+         li{
+            @include semibold(); 
+            font-size: 16px;
+            padding-top: 30px;
+         }
+      }
+
+
    }
 
    aside{
