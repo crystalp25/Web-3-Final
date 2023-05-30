@@ -1,4 +1,5 @@
 #hero{
+   @include site-padding; 
    display: grid;
    grid-template-columns: 1fr;
 
@@ -6,7 +7,7 @@
 
    @include lg{
       display: grid;
-   grid-template-columns: 1fr 1fr; 
+      grid-template-columns: 1fr 1fr; 
    }
 
    #text{
@@ -21,12 +22,26 @@
          h3{
             font-size: 18px;
          }
-         h2{
+         button{
+            @include semibold(); 
             font-size: 16px;
+            margin-top: -10px;
+            color: $DarkTeal;
+            border: none;
+            background-color: white;
+
+            a:hover{ text-decoration: underline;}
+
          }
       }
       
-      aside{}
+      aside{
+         display: flex;
+         flex-direction: row;
+         h4{
+            font-size: 32px;
+         }
+      }
 
       article{
          h3{
@@ -46,11 +61,17 @@
          }
       }
 
-
    }
 
-   aside{
-      display: flex;
+   #imgs{
+      aside{
+         margin: 20px;
+      }
+      div{
+         display: flex; 
+         margin: 40px;
+
+      }
    }
 
 }

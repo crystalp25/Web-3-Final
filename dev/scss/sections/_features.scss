@@ -1,9 +1,33 @@
 #features{
-    background-color: $DarkTeal;
+    display: flex;
+    flex-direction: column;
     align-items: center;
+    background-color: $DarkTeal;
+    width: 390px;
+    height: 1722px;
 
     #icons{
         display: flex;
+        flex-direction: column;
+    }
+
+
+    @include lg{
+        width: 1440px;
+        height: 711px;
+
+        #icons{
+            display: flex;
+            flex-direction: row;
+
+
+        }
+
+
+
+
+
+
     }
 
     

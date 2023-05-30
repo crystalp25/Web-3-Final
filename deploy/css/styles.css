@@ -327,11 +327,13 @@ img {
 }
 
 .section {
-  padding: 10px 20px;
+  padding-left: 16px;
+  padding-right: 16px;
 }
 @media (min-width: 1024px) {
   .section {
-    padding: 150px 200px;
+    padding-left: 32px;
+    padding-right: 32px;
   }
 }
 
@@ -387,12 +389,19 @@ p {
     Buttons
 ============= */
 a.button {
+  display: flex;
   background-color: #355C65;
-  padding: 24px 8px;
   text-decoration: none;
+  border-radius: 40px;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: 40px;
+  padding: 8px 24px;
   font-family: "Nunito", sans-serif;
   font-weight: 300;
   color: white;
+  font-size: 18px;
 }
 a.button:hover {
   background-color: #349AB1;
@@ -516,8 +525,16 @@ header #account {
     Header
 ============= */
 #hero {
+  padding-left: 16px;
+  padding-right: 16px;
   display: grid;
   grid-template-columns: 1fr;
+}
+@media (min-width: 1024px) {
+  #hero {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
 }
 @media (min-width: 1024px) {
   #hero {
@@ -536,8 +553,24 @@ header #account {
 #hero #text #title h3 {
   font-size: 18px;
 }
-#hero #text #title h2 {
+#hero #text #title button {
+  font-family: "Nunito", sans-serif;
+  font-weight: 600;
   font-size: 16px;
+  margin-top: -10px;
+  color: #355C65;
+  border: none;
+  background-color: white;
+}
+#hero #text #title button a:hover {
+  text-decoration: underline;
+}
+#hero #text aside {
+  display: flex;
+  flex-direction: row;
+}
+#hero #text aside h4 {
+  font-size: 32px;
 }
 #hero #text article h3 {
   font-size: 18px;
@@ -552,33 +585,91 @@ header #account {
   font-size: 16px;
   padding-top: 30px;
 }
-#hero aside {
+#hero #imgs aside {
+  margin: 20px;
+}
+#hero #imgs div {
   display: flex;
+  margin: 40px;
 }
 
+#additions {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+@media (min-width: 1024px) {
+  #additions {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+}
 #additions article {
   display: flex;
   justify-content: space-between;
 }
+#additions article h1 {
+  font-size: 40px;
+}
+#additions article #select {
+  display: flex;
+  justify-content: space-between;
+}
+#additions article #select h3 {
+  font-size: 20px;
+}
 #additions ul {
   list-style: none;
   display: flex;
-  gap: 20px;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  padding: 0px;
 }
 #additions ul li {
   background-color: #D4DAEC;
-  padding: 24px;
-  gap: 24px;
-  width: 418px;
-  height: 552px;
+  padding: 0px 8px;
+  width: 358px;
+  height: 553px;
+  border-radius: 8px;
+}
+@media (min-width: 1024px) {
+  #additions ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 0px;
+  }
+  #additions ul li {
+    padding: 0px 8px;
+    width: 418px;
+    height: 552px;
+    border-radius: 8px;
+  }
 }
 
 #features {
-  background-color: #355C65;
+  display: flex;
+  flex-direction: column;
   align-items: center;
+  background-color: #355C65;
+  width: 390px;
+  height: 1722px;
 }
 #features #icons {
   display: flex;
+  flex-direction: column;
+}
+@media (min-width: 1024px) {
+  #features {
+    width: 1440px;
+    height: 711px;
+  }
+  #features #icons {
+    display: flex;
+    flex-direction: row;
+  }
 }
 
 #hover {

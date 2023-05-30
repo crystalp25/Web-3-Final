@@ -3,9 +3,16 @@
 ============= */
 
 @mixin button($bg-color){
+    display: flex;
     background-color: $bg-color;
-    padding: 24px 8px; 
     text-decoration: none; 
+    border-radius: 40px;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: 40px;
+    padding: 8px 24px;
+
     @include button-small();
 
     &:hover{

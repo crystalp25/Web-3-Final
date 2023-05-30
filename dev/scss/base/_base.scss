@@ -26,10 +26,12 @@ img{
 }
 
 @mixin site-padding(){
-    padding: 10px 20px; 
+    padding-left: 16px; 
+    padding-right: 16px;
 
     @include lg{
-        padding: 150px 200px 
+        padding-left: 32px; 
+        padding-right: 32px; 
     }
 }
 

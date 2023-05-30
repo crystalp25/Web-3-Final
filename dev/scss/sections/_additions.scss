@@ -1,20 +1,54 @@
 #additions{
+    @include site-padding; 
     
     article{
         display: flex;
         justify-content: space-between; 
+
+        h1{
+           font-size: 40px; 
+        }
+
+        #select{
+            display: flex;
+            justify-content: space-between; 
+            h3{
+                font-size: 20px;
+            }
+
+        }
     }
 
     ul{
         list-style: none;
         display: flex;
-        gap: 20px;
+        justify-content: space-between; 
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+        padding: 0px;
         li{
             background-color: $CardPurple;
-            padding: 24px;
-            gap: 24px;
-            width: 418px;
-            height: 552px;
+            padding: 0px 8px;
+            width: 358px;
+            height: 553px;
+            border-radius: 8px;
+        }
+    }
+
+    @include lg{
+        ul{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between; 
+            gap: 20px;
+            padding: 0px;
+            li{
+                padding: 0px 8px;
+                width: 418px;
+                height: 552px;
+                border-radius: 8px;
+            }
         }
     }
 
