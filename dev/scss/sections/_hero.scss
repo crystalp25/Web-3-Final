@@ -4,7 +4,6 @@
    grid-template-columns: 1fr;
 
 
-
    @include lg{
       display: grid;
       grid-template-columns: 1fr 1fr; 
@@ -22,21 +21,20 @@
          h3{
             font-size: 18px;
          }
-         button{
+         a{
             @include semibold(); 
             font-size: 16px;
             margin-top: -10px;
             color: $DarkTeal;
-            border: none;
-            background-color: white;
-
-            a:hover{ text-decoration: underline;}
+            text-decoration: none;
+            &:hover{ text-decoration: underline;}
 
          }
       }
       
       aside{
          display: flex;
+         align-items: center;
          flex-direction: row;
          h4{
             font-size: 32px;
@@ -69,7 +67,7 @@
       }
       div{
          display: flex; 
-         margin: 40px;
+         justify-content: space-between; 
 
       }
    }

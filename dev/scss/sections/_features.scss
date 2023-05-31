@@ -2,23 +2,67 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: $DarkTeal;
-    width: 390px;
     height: 1722px;
+    width: auto;
+    gap: 32px;
+    background-color: $DarkTeal;
+    color: white;
+    
+
+    h1{
+        text-align: center;
+    }
 
     #icons{
         display: flex;
         flex-direction: column;
+
+        h3{
+            font-size: 22px;
+            text-align: center;
+        }
+
+        p{
+           font-size: 18px; 
+           text-align: center;
+        }
+
+        div{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border-bottom: 1px solid $MediumGrey;
+        }
+
+        #four{
+            border-bottom: none;
+        }
+
     }
 
 
     @include lg{
-        width: 1440px;
+        padding: 40px 56px 40px 56px; 
+        width: auto;
         height: 711px;
 
         #icons{
             display: flex;
             flex-direction: row;
+            justify-content: center;
+            gap: 100px; 
+
+            div{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                border-bottom: none;
+                border-right: 1px solid $MediumGrey;
+            }
+
+            #four{
+                border-right: none;
+            }
 
 
         }

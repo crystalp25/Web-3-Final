@@ -11,31 +11,17 @@ header {
     padding: 16px 28px;
 
     #burger-button {
-        display: block;
-        span,
-        span::before,
-        span::after {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+        position:relative;
+        
+        div{
             height: 5px;
             width: 34px;
             background-color: $MediumGrey;
         }
 
-        span {
-            display: block;
-            position: relative;
-
-            &::before {
-                position: absolute;
-                content: " ";
-                top: -10px;
-            }
-
-            &::after {
-                position: absolute;
-                content: " ";
-                top: 10px;
-            }
-        }
     }
 
     #burger-container{
@@ -48,6 +34,21 @@ header {
     }
 
     #main-menu{
+        @media only screen and (max-width: 600px) {
+            background-color: green;
+            transition:.3s;
+            height: 100vw;
+            width: 80%;
+            position: absolute;
+            top: 0;
+            right: -100%;
+  
+            &.show-menu{
+                right:0;
+                transition:.3s;
+            }
+        }
+    
         ul{ 
             display: flex;
             list-style: none;

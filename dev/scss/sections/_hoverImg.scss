@@ -1,5 +1,19 @@
-#hover{
+
+
+
+@include lg{
+   #hover{
    display: flex;
    flex-direction: column;
    align-items: center;
+   height: 945px;
+   width: auto;
+   padding: 35px 110px;
+
+   h1{
+      font-size: 55px;
+      text-align: center;
+   }
+
+   }
 }

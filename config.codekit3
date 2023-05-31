@@ -21,11 +21,11 @@
       "oF" : 0,
       "pg" : 0
     },
-    "\/deploy\/img\/additions\/rec 1.png" : {
+    "\/deploy\/img\/additions\/rec1.png" : {
       "ft" : 32768,
       "iS" : 29085,
       "oA" : 0,
-      "oAP" : "\/deploy\/img\/additions\/rec 1.png",
+      "oAP" : "\/deploy\/img\/additions\/rec1.png",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -34,11 +34,11 @@
       "q" : 90,
       "rq" : 75
     },
-    "\/deploy\/img\/additions\/rec 2.png" : {
+    "\/deploy\/img\/additions\/rec2.png" : {
       "ft" : 32768,
       "iS" : 41469,
       "oA" : 0,
-      "oAP" : "\/deploy\/img\/additions\/rec 2.png",
+      "oAP" : "\/deploy\/img\/additions\/rec2.png",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -47,11 +47,11 @@
       "q" : 90,
       "rq" : 75
     },
-    "\/deploy\/img\/additions\/rec 3.png" : {
+    "\/deploy\/img\/additions\/rec3.png" : {
       "ft" : 32768,
       "iS" : 89408,
       "oA" : 0,
-      "oAP" : "\/deploy\/img\/additions\/rec 3.png",
+      "oAP" : "\/deploy\/img\/additions\/rec3.png",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -391,6 +391,14 @@
       "sC" : 3,
       "tS" : 0
     },
+    "\/dev\/content\/checkout\/_checkout1.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/dev\/content\/checkout\/_checkout1.html",
+      "oF" : 0
+    },
     "\/dev\/content\/product\/_additions.kit" : {
       "cB" : 0,
       "ft" : 2048,
@@ -437,6 +445,14 @@
       "hM" : 0,
       "oA" : 1,
       "oAP" : "\/dev\/content\/product\/_notsure.html",
+      "oF" : 0
+    },
+    "\/dev\/content\/thanks\/_thankyou.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/dev\/content\/thanks\/_thankyou.html",
       "oF" : 0
     },
     "\/dev\/global\/footer.kit" : {

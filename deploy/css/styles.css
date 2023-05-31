@@ -438,28 +438,15 @@ header {
   padding: 16px 28px;
 }
 header #burger-button {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  position: relative;
 }
-header #burger-button span,
-header #burger-button span::before,
-header #burger-button span::after {
+header #burger-button div {
   height: 5px;
   width: 34px;
   background-color: #808080;
-}
-header #burger-button span {
-  display: block;
-  position: relative;
-}
-header #burger-button span::before {
-  position: absolute;
-  content: " ";
-  top: -10px;
-}
-header #burger-button span::after {
-  position: absolute;
-  content: " ";
-  top: 10px;
 }
 header #burger-container {
   display: block;
@@ -473,6 +460,21 @@ header #burger-container {
 }
 header #main-menu {
   display: none;
+}
+@media only screen and (max-width: 600px) {
+  header #main-menu {
+    background-color: green;
+    transition: 0.3s;
+    height: 100vw;
+    width: 80%;
+    position: absolute;
+    top: 0;
+    right: -100%;
+  }
+  header #main-menu.show-menu {
+    right: 0;
+    transition: 0.3s;
+  }
 }
 header #main-menu ul {
   display: flex;
@@ -553,20 +555,20 @@ header #account {
 #hero #text #title h3 {
   font-size: 18px;
 }
-#hero #text #title button {
+#hero #text #title a {
   font-family: "Nunito", sans-serif;
   font-weight: 600;
   font-size: 16px;
   margin-top: -10px;
   color: #355C65;
-  border: none;
-  background-color: white;
+  text-decoration: none;
 }
-#hero #text #title button a:hover {
+#hero #text #title a:hover {
   text-decoration: underline;
 }
 #hero #text aside {
   display: flex;
+  align-items: center;
   flex-direction: row;
 }
 #hero #text aside h4 {
@@ -590,7 +592,7 @@ header #account {
 }
 #hero #imgs div {
   display: flex;
-  margin: 40px;
+  justify-content: space-between;
 }
 
 #additions {
@@ -653,31 +655,74 @@ header #account {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #355C65;
-  width: 390px;
   height: 1722px;
+  width: auto;
+  gap: 32px;
+  background-color: #355C65;
+  color: white;
+}
+#features h1 {
+  text-align: center;
 }
 #features #icons {
   display: flex;
   flex-direction: column;
 }
+#features #icons h3 {
+  font-size: 22px;
+  text-align: center;
+}
+#features #icons p {
+  font-size: 18px;
+  text-align: center;
+}
+#features #icons div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-bottom: 1px solid #808080;
+}
+#features #icons #four {
+  border-bottom: none;
+}
 @media (min-width: 1024px) {
   #features {
-    width: 1440px;
+    padding: 40px 56px 40px 56px;
+    width: auto;
     height: 711px;
   }
   #features #icons {
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    gap: 100px;
+  }
+  #features #icons div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: none;
+    border-right: 1px solid #808080;
+  }
+  #features #icons #four {
+    border-right: none;
   }
 }
 
-#hover {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+@media (min-width: 1024px) {
+  #hover {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 945px;
+    width: auto;
+    padding: 35px 110px;
+  }
+  #hover h1 {
+    font-size: 55px;
+    text-align: center;
+  }
 }
-
 #community {
   background-color: #004251;
 }
