@@ -1,6 +1,103 @@
 #community{
+    @include site-padding; 
     background-color: $DarkerTeal;
 
+    #title{
+        h1{
+            font-size: 55px;
+            color: white;
+        }
+        h3{
+            font-size: 32px;
+            color: $StarGrey;
+        }
+    }
+
+    #options{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h1{
+            font-size: 40px;
+            color: white;
+        }
+        p{
+            font-size: 27px;
+            color: white;
+        }
+
+        aside{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        div{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            width: 381px;
+        }
+
+        #wood{
+
+        }
+        #leather{
+
+        }
+        #paper{
+
+        }
+    }
+
+    article{
+
+        aside{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+
+            h1{
+                font-size: 40px;
+                color: white;
+            }
+
+            #icons{}
+
+        }
+
+        #imgs{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            
+
+        }
+    }
+
+
+
+    @include lg{
+        #title{
+            
+        }
+    
+        #options{
+            display: flex;
+            flex-direction: row;
+           
+            }
+            #leather{
+    
+            }
+            #paper{
+    
+            }
+        }
+    
+       
 
     
 }

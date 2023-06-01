@@ -2,8 +2,42 @@
     Footer
 ============= */
 footer{
+    @include site-padding; 
+    display: flex;
+    flex-direction: column;
+    background-color: $StarGrey;
+    justify-content: space-between; 
+
+    article{
+        display: flex;
+        flex-direction: row;
+        border-bottom: 1px solid $MediumGrey;
+    }
+
+    aside{
+        display: flex;
+        flex-direction: column;
+    }
 
 
+    @include lg{
+        display: flex;
+        flex-direction: row;
 
+        article{
+            div{
+                border-right: 1px solid $MediumGrey;
+            }
+            border-bottom: none;
+        }
+
+        aside{
+            display: flex;
+            flex-direction: row;
+        }
+
+   
+
+    }
     
 }

@@ -35,13 +35,6 @@ img{
     }
 }
 
-.section{
-    @include site-padding(); 
-}
 
-
-.article{
-    @include flex()
-}
 
 
