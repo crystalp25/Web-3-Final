@@ -12,7 +12,7 @@
    #text{
       display: flex; 
       flex-direction: column;
-      gap: 40px;
+      gap: 0px;
 
       #title{
          h1{
@@ -38,13 +38,14 @@
          flex-direction: row;
          h4{
             font-size: 32px;
+            margin: 0px;
          }
       }
 
       article{
          h3{
             font-size: 18px;
-            padding-bottom: 4px;
+            padding-bottom: 0px;
          }
          h2{
             font-size: 16px;
@@ -55,7 +56,10 @@
          li{
             @include semibold(); 
             font-size: 16px;
-            padding-top: 30px;
+            padding-top: 0px;
+            margin-bottom: 20px;
+            line-height: 21.82px;    
+
          }
       }
 
@@ -63,11 +67,15 @@
 
    #imgs{
       aside{
-         margin: 20px;
+         margin: 0px;
       }
       div{
-         display: flex; 
+         display: grid; 
+         grid-template-columns: 1fr 1fr 1fr;
          justify-content: space-between; 
+         img{
+            max-width: 100%;
+         }
 
       }
    }

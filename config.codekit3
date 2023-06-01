@@ -9,6 +9,14 @@
   ],
   "creatorBuild" : "34472",
   "files" : {
+    "\/deploy\/checkout.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/checkout.html",
+      "oF" : 0
+    },
     "\/deploy\/css\/styles.css" : {
       "aP" : 1,
       "bl" : 0,
@@ -391,11 +399,35 @@
       "sC" : 3,
       "tS" : 0
     },
-    "\/dev\/content\/checkout\/_checkout1.kit" : {
+    "\/deploy\/ThankYou.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/ThankYou.html",
+      "oF" : 0
+    },
+    "\/dev\/checkout.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/dev\/checkout.html",
+      "oF" : 0
+    },
+    "\/dev\/checkout.kit" : {
       "cB" : 0,
       "ft" : 2048,
       "hM" : 0,
       "oA" : 0,
+      "oAP" : "\/deploy\/checkout.html",
+      "oF" : 2
+    },
+    "\/dev\/content\/checkout\/_checkout1.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 1,
       "oAP" : "\/dev\/content\/checkout\/_checkout1.html",
       "oF" : 0
     },
@@ -451,7 +483,7 @@
       "cB" : 0,
       "ft" : 2048,
       "hM" : 0,
-      "oA" : 0,
+      "oA" : 1,
       "oAP" : "\/dev\/content\/thanks\/_thankyou.html",
       "oF" : 0
     },
@@ -671,6 +703,21 @@
       "pg" : 0,
       "sct" : 0
     },
+    "\/dev\/scss\/sections\/_checkout1.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/scss\/sections\/_checkout1.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
     "\/dev\/scss\/sections\/_community.scss" : {
       "aP" : 0,
       "bl" : 0,
@@ -746,6 +793,21 @@
       "pg" : 0,
       "sct" : 0
     },
+    "\/dev\/scss\/sections\/_thankyou.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/scss\/sections\/_thankyou.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
     "\/dev\/scss\/styles.scss" : {
       "aP" : 0,
       "bl" : 0,
@@ -760,6 +822,22 @@
       "oS" : 0,
       "pg" : 0,
       "sct" : 0
+    },
+    "\/dev\/ThankYou.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/dev\/ThankYou.html",
+      "oF" : 0
+    },
+    "\/dev\/ThankYou.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/ThankYou.html",
+      "oF" : 2
     },
     "\/README.md" : {
       "cB" : 0,

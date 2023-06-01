@@ -416,13 +416,13 @@ header {
   justify-content: space-between;
   padding: 16px 28px;
 }
-header #burger-button {
+header #burger-btn {
   display: flex;
   flex-direction: column;
   gap: 6px;
   position: relative;
 }
-header #burger-button div {
+header #burger-btn div {
   height: 5px;
   width: 34px;
   background-color: #808080;
@@ -566,7 +566,7 @@ footer aside {
 #hero #text {
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 0px;
 }
 #hero #text #title h1 {
   font-size: 40px;
@@ -592,10 +592,11 @@ footer aside {
 }
 #hero #text aside h4 {
   font-size: 32px;
+  margin: 0px;
 }
 #hero #text article h3 {
   font-size: 18px;
-  padding-bottom: 4px;
+  padding-bottom: 0px;
 }
 #hero #text article h2 {
   font-size: 16px;
@@ -604,14 +605,20 @@ footer aside {
   font-family: "Nunito", sans-serif;
   font-weight: 600;
   font-size: 16px;
-  padding-top: 30px;
+  padding-top: 0px;
+  margin-bottom: 20px;
+  line-height: 21.82px;
 }
 #hero #imgs aside {
-  margin: 20px;
+  margin: 0px;
 }
 #hero #imgs div {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   justify-content: space-between;
+}
+#hero #imgs div img {
+  max-width: 100%;
 }
 
 #additions {
