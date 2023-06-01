@@ -807,11 +807,11 @@ footer aside {
   }
 }
 
-section {
+#notsure {
   display: flex;
   flex-direction: row;
 }
-section aside {
+#notsure aside {
   display: flex;
   flex-direction: column;
 }
