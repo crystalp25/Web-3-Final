@@ -41,10 +41,10 @@ header {
             width: 80%;
             position: absolute;
             top: 0;
-            right: -100%;
+            left: -100%;
   
             &.show-menu{
-                right:0;
+                left:0;
                 transition:.3s;
             }
         }

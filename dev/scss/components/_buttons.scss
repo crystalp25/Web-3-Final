@@ -22,7 +22,16 @@
 }
 
 a.button{
-    @include button($DarkTeal)
+    @include button($DarkTeal);
+}
+
+.purpleButton{
+    @include button($ButtonPurple);
+
+    &:hover{
+        background-color: $BrightButtonPurple;
+        transition: .3s;
+    }
 }
 
 

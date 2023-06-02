@@ -391,6 +391,30 @@ a.button:hover {
   transition: 0.3s;
 }
 
+.purpleButton {
+  display: flex;
+  background-color: #60609C;
+  text-decoration: none;
+  border-radius: 40px;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: 40px;
+  padding: 8px 24px;
+  font-family: "Nunito", sans-serif;
+  font-weight: 300;
+  color: white;
+  font-size: 18px;
+}
+.purpleButton:hover {
+  background-color: #349AB1;
+  transition: 0.3s;
+}
+.purpleButton:hover {
+  background-color: #5353EE;
+  transition: 0.3s;
+}
+
 /* =============
     Forms
 ============= */
@@ -452,10 +476,10 @@ header #main-menu {
     width: 80%;
     position: absolute;
     top: 0;
-    right: -100%;
+    left: -100%;
   }
   header #main-menu.show-menu {
-    right: 0;
+    left: 0;
     transition: 0.3s;
   }
 }
@@ -555,6 +579,7 @@ footer aside {
   display: grid;
   grid-template-columns: 1fr;
   margin-top: 20px;
+  grid-template-areas: "title" "imgs" "info";
 }
 @media (min-width: 1024px) {
   #hero {
@@ -569,6 +594,9 @@ footer aside {
     grid-template-areas: "title     imgs" "info      imgs";
     margin-top: 40px;
   }
+}
+#hero #title {
+  grid-area: title;
 }
 #hero #title h1 {
   font-size: 40px;
@@ -586,6 +614,9 @@ footer aside {
 #hero #title a:hover {
   text-decoration: underline;
 }
+#hero #imgs {
+  grid-area: imgs;
+}
 #hero #imgs aside {
   margin: 0px;
 }
@@ -598,6 +629,9 @@ footer aside {
 }
 #hero #imgs div img {
   max-width: 100%;
+}
+#hero #info {
+  grid-area: info;
 }
 #hero #info aside {
   display: flex;
@@ -677,6 +711,9 @@ footer aside {
     width: 418px;
     height: 552px;
     border-radius: 8px;
+  }
+  #additions ul li img {
+    padding-left: 40px;
   }
 }
 
