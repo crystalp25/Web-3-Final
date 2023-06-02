@@ -322,6 +322,10 @@ template {
 /* =============
     Base
 ============= */
+* {
+  scroll-behavior: smooth;
+}
+
 img {
   max-width: 100%;
 }
@@ -550,6 +554,7 @@ footer aside {
   padding-right: 16px;
   display: grid;
   grid-template-columns: 1fr;
+  margin-top: 20px;
 }
 @media (min-width: 1024px) {
   #hero {
@@ -561,53 +566,25 @@ footer aside {
   #hero {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-template-areas: "title     imgs" "info      imgs";
+    margin-top: 40px;
   }
 }
-#hero #text {
-  display: flex;
-  flex-direction: column;
-  gap: 0px;
-}
-#hero #text #title h1 {
+#hero #title h1 {
   font-size: 40px;
 }
-#hero #text #title h3 {
+#hero #title h3 {
   font-size: 18px;
 }
-#hero #text #title a {
+#hero #title a {
   font-family: "Nunito", sans-serif;
   font-weight: 600;
   font-size: 16px;
-  margin-top: -10px;
-  color: #355C65;
+  color: #349AB1;
   text-decoration: none;
 }
-#hero #text #title a:hover {
+#hero #title a:hover {
   text-decoration: underline;
-}
-#hero #text aside {
-  display: flex;
-  align-items: center;
-  flex-direction: row;
-}
-#hero #text aside h4 {
-  font-size: 32px;
-  margin: 0px;
-}
-#hero #text article h3 {
-  font-size: 18px;
-  padding-bottom: 0px;
-}
-#hero #text article h2 {
-  font-size: 16px;
-}
-#hero #text ul li {
-  font-family: "Nunito", sans-serif;
-  font-weight: 600;
-  font-size: 16px;
-  padding-top: 0px;
-  margin-bottom: 20px;
-  line-height: 21.82px;
 }
 #hero #imgs aside {
   margin: 0px;
@@ -616,9 +593,35 @@ footer aside {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   justify-content: space-between;
+  grid-gap: 15px;
+  margin-top: 7px;
 }
 #hero #imgs div img {
   max-width: 100%;
+}
+#hero #info aside {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+#hero #info aside h4 {
+  font-size: 32px;
+  margin: 0px;
+}
+#hero #info article h3 {
+  font-size: 18px;
+  padding-bottom: 0px;
+}
+#hero #info article h2 {
+  font-size: 16px;
+}
+#hero #info ul li {
+  font-family: "Nunito", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  padding-top: 0px;
+  margin-bottom: 20px;
+  line-height: 21.82px;
 }
 
 #additions {

@@ -407,14 +407,6 @@
       "oAP" : "\/deploy\/ThankYou.html",
       "oF" : 0
     },
-    "\/dev\/checkout.html" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/dev\/checkout.html",
-      "oF" : 0
-    },
     "\/dev\/checkout.kit" : {
       "cB" : 0,
       "ft" : 2048,
@@ -822,14 +814,6 @@
       "oS" : 0,
       "pg" : 0,
       "sct" : 0
-    },
-    "\/dev\/ThankYou.html" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/dev\/ThankYou.html",
-      "oF" : 0
     },
     "\/dev\/ThankYou.kit" : {
       "cB" : 0,

@@ -2,36 +2,46 @@
    @include site-padding; 
    display: grid;
    grid-template-columns: 1fr;
+   margin-top: 20px;
 
 
    @include lg{
       display: grid;
-      grid-template-columns: 1fr 1fr; 
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas:
+      "title     imgs"
+      "info      imgs";
+      margin-top: 40px;
    }
 
-   #text{
-      display: flex; 
-      flex-direction: column;
-      gap: 0px;
 
-      #title{
-         h1{
-            font-size: 40px;
-         }
-         h3{
-            font-size: 18px;
-         }
-         a{
-            @include semibold(); 
-            font-size: 16px;
-            margin-top: -10px;
-            color: $DarkTeal;
-            text-decoration: none;
-            &:hover{ text-decoration: underline;}
+   #title{
+      h1{font-size: 40px;}
+      h3{font-size: 18px;}
+      a{
+         @include semibold(); 
+         font-size: 16px;
+         color: $RegTeal;
+         text-decoration: none;
+         &:hover{ text-decoration: underline;}
+      }
+   }
 
+   #imgs{
+      aside{margin: 0px;}
+      div{
+         display: grid; 
+         grid-template-columns: 1fr 1fr 1fr;
+         justify-content: space-between; 
+         grid-gap: 15px;
+         margin-top: 7px;
+         img{
+            max-width: 100%;
          }
       }
-      
+   }
+
+   #info{
       aside{
          display: flex;
          align-items: center;
@@ -41,43 +51,24 @@
             margin: 0px;
          }
       }
-
       article{
          h3{
             font-size: 18px;
             padding-bottom: 0px;
          }
-         h2{
-            font-size: 16px;
-         }
+         h2{ font-size: 16px;}
       }
-
       ul{
          li{
-            @include semibold(); 
-            font-size: 16px;
-            padding-top: 0px;
-            margin-bottom: 20px;
-            line-height: 21.82px;    
-
-         }
-      }
-
-   }
-
-   #imgs{
-      aside{
-         margin: 0px;
-      }
-      div{
-         display: grid; 
-         grid-template-columns: 1fr 1fr 1fr;
-         justify-content: space-between; 
-         img{
-            max-width: 100%;
+         @include semibold(); 
+         font-size: 16px;
+         padding-top: 0px;
+         margin-bottom: 20px;
+         line-height: 21.82px;
          }
 
       }
    }
+
 
 }
