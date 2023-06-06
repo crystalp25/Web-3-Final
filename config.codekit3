@@ -68,6 +68,58 @@
       "q" : 90,
       "rq" : 75
     },
+    "\/deploy\/img\/Checkout\/Envelope.png" : {
+      "ft" : 32768,
+      "iS" : 1044,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/Checkout\/Envelope.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
+    },
+    "\/deploy\/img\/Checkout\/one.png" : {
+      "ft" : 32768,
+      "iS" : 15794,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/Checkout\/one.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
+    },
+    "\/deploy\/img\/Checkout\/three.png" : {
+      "ft" : 32768,
+      "iS" : 9616,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/Checkout\/three.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
+    },
+    "\/deploy\/img\/Checkout\/two.png" : {
+      "ft" : 32768,
+      "iS" : 25407,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/Checkout\/two.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
+    },
     "\/deploy\/img\/community\/Facebook.png" : {
       "ft" : 32768,
       "iS" : 1089,
