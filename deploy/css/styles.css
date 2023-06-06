@@ -963,6 +963,38 @@ footer aside {
 #checkout article #shipping div p {
   font-size: 14px;
 }
+#checkout #cart {
+  display: flex;
+  flex-direction: column;
+}
+#checkout #cart div {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "img  text" "img  price";
+  text-align: end;
+  border-bottom: 1px solid #808080;
+}
+#checkout #cart div h3 {
+  font-size: 18px;
+  margin-bottom: 6px;
+}
+#checkout #cart div p {
+  font-size: 14px;
+  margin-top: 0px;
+  margin-bottom: 74px;
+}
+#checkout #cart div #img {
+  grid-area: img;
+}
+#checkout #cart div #text {
+  grid-area: text;
+  display: flex;
+  flex-direction: column;
+  border-bottom: none;
+}
+#checkout #cart div #price {
+  grid-area: price;
+}
 @media (min-width: 1024px) {
   #checkout aside h3 {
     font-size: 40px;

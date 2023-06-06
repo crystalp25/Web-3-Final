@@ -58,6 +58,52 @@
         }
     }
 
+    #cart{
+        display: flex;
+        flex-direction: column;
+
+        div{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-areas:
+            "img  text"
+            "img  price"; 
+            text-align: end;
+            border-bottom: 1px solid $MediumGrey;
+            
+            h3{
+                font-size: 18px;
+                margin-bottom: 6px;
+            }
+            p{
+                font-size: 14px;
+                margin-top: 0px;
+                margin-bottom: 74px;
+            }
+            
+
+            #img{
+                grid-area: img;
+            }
+
+            #text{
+                grid-area: text;
+                display: flex;
+                flex-direction: column;
+                border-bottom: none;
+
+            
+            }
+
+            #price{
+                grid-area: price;
+            }
+
+        }
+
+
+    }
+
 
 
     @include lg{
