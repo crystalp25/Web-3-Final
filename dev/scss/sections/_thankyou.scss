@@ -1,5 +1,7 @@
 #thankyou{
+  
     article{
+        text-align: center;
         h3{font-size: 40px;}
         p{font-size: 18px;}
         div{
@@ -12,8 +14,22 @@
     #bar{}
 
     aside{
+        
+        text-align: center;
         h3{font-size: 18px;}
         p{font-size: 18px;}
+        
+    }
+
+    @include lg{
+        article{
+            text-align: center;
+        }
+
+        aside{
+            text-align: start;
+            padding-left: 82px;
+        }
     }
 
 

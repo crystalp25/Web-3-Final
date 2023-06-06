@@ -107,6 +107,10 @@
 
         }
 
+        #total{
+            display: none;
+        }
+
 
     }
 
@@ -135,6 +139,33 @@
 
         #cart{
             width: 570px;
+
+
+            #total{
+                display: inline;
+
+                aside{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: end;
+                    align-items: center;
+                    h3{
+                        font-size: 18px;
+                        margin: 5px;
+                    }
+                    p{
+                        font-size: 18px;
+                        margin: 5px;
+                    }
+                    #finalcost{font-size: 40px;}
+                }
+
+                #discount{
+                    border-bottom: 1px solid $MediumGrey;
+
+                }
+
+            }
         }
     }
 
