@@ -9,25 +9,6 @@ img{
     max-width: 100%;
 }
 
-@mixin flex(){
-    display: flex; 
-    flex-direction: column;
-
-    @include lg{
-        flex-direction: row;
-    }
-}
-
-@mixin grid-three(){
-    display: grid; 
-    grid-template-columns: 1fr;
-    gap: 20px; 
-
-    @include lg{
-        grid-template-columns: 1fr 1fr 1fr;
-    }
-}
-
 @mixin site-padding(){
     padding-left: 16px; 
     padding-right: 16px;

@@ -629,18 +629,40 @@ footer aside {
 }
 #hero #title h1 {
   font-size: 40px;
+  margin-bottom: 4px;
+}
+#hero #title div {
+  display: flex;
+  flex-direction: column;
+}
+#hero #title div img {
+  width: 145px;
+  height: auto;
+}
+#hero #title div .view {
+  font-family: "Nunito", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  color: #37BCDB;
+  text-decoration: none;
+}
+#hero #title div .view:hover {
+  text-decoration: underline;
 }
 #hero #title h3 {
   font-size: 18px;
+  margin-top: 26px;
+  margin-bottom: 15px;
+  line-height: 24px;
 }
-#hero #title a {
+#hero #title .link {
   font-family: "Nunito", sans-serif;
   font-weight: 600;
   font-size: 16px;
   color: #349AB1;
   text-decoration: none;
 }
-#hero #title a:hover {
+#hero #title .link:hover {
   text-decoration: underline;
 }
 #hero #imgs {
@@ -648,6 +670,7 @@ footer aside {
 }
 #hero #imgs aside {
   margin: 0px;
+  margin-top: 20px;
 }
 #hero #imgs div {
   display: grid;

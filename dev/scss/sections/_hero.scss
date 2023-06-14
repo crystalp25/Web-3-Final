@@ -21,9 +21,32 @@
 
    #title{
       grid-area: title;
-      h1{font-size: 40px;}
-      h3{font-size: 18px;}
-      a{
+      h1{
+         font-size: 40px;
+         margin-bottom: 4px;
+      }
+      div{
+         display: flex; 
+         flex-direction: column; 
+         img{
+            width: 145px; 
+            height: auto; 
+         }
+         .view{
+            @include semibold(); 
+            font-size: 16px;
+            color: $ReviewBlue;
+            text-decoration: none;
+            &:hover{ text-decoration: underline;}
+         }
+      }
+      h3{
+         font-size: 18px;
+         margin-top: 26px; 
+         margin-bottom: 15px; 
+         line-height: 24px; 
+      }
+      .link{
          @include semibold(); 
          font-size: 16px;
          color: $RegTeal;
@@ -34,7 +57,10 @@
 
    #imgs{
       grid-area: imgs;
-      aside{margin: 0px;}
+      aside{
+         margin: 0px;
+         margin-top: 20px;
+      }
       div{
          display: grid; 
          grid-template-columns: 1fr 1fr 1fr;
