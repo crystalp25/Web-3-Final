@@ -11,7 +11,13 @@
 
     }
 
-    #bar{}
+    #bar1{
+
+    }
+
+    #bar2{
+        display: none;
+    }
 
     aside{
         
@@ -26,9 +32,22 @@
             text-align: center;
         }
 
+        #bar1{
+            display: none;
+        }
+    
+        #bar2{
+            display: inline;
+        }
+
         aside{
             text-align: start;
             padding-left: 82px;
+            p{
+                margin: -30px;
+                margin-bottom: 20px;
+                margin-top: 2px;
+            }
         }
     }
 

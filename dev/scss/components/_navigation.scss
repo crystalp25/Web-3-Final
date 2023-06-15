@@ -82,7 +82,7 @@ header {
     
         ul{ 
             display: flex;
-            gap: 90px;
+            gap: 60px;
             li{
                 list-style-type: none; 
                 a{
@@ -92,7 +92,7 @@ header {
                     font-size: 20px;
                     text-decoration: none;
                     &:hover{ text-decoration: underline;}
-     
+                    scroll-behavior: smooth;
                  }
             }
         }

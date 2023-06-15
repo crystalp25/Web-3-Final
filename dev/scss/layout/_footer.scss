@@ -61,6 +61,7 @@ footer{
         article{
             div{
                 border-right: 1px solid $MediumGrey;
+                margin-right: 20px;
             }
             border-bottom: none;
         }
@@ -68,6 +69,7 @@ footer{
         aside{
             display: flex;
             flex-direction: row;
+           
         }
 
    
