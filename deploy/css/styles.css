@@ -1215,16 +1215,66 @@ footer div img {
   left: 150px;
   padding: 2px 48px;
 }
+#notsure aside .button {
+  display: none;
+}
 
 @media (min-width: 1024px) {
   #notsure {
     display: inline;
     display: flex;
     flex-direction: row;
+    text-align: left;
+    color: black;
+  }
+  #notsure #image {
+    display: inline;
+  }
+  #notsure article img {
+    display: none;
   }
   #notsure aside {
     display: flex;
     flex-direction: column;
+    justify-content: left;
+  }
+  #notsure aside div {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    margin-left: 20px;
+  }
+  #notsure aside div h1 {
+    display: inline;
+    font-size: 35px;
+  }
+  #notsure aside div h2 {
+    display: inline;
+    font-size: 30px;
+    line-height: 50px;
+    margin-top: 0px;
+  }
+  #notsure aside div h3 {
+    display: none;
+  }
+  #notsure aside div p {
+    display: none;
+  }
+  #notsure aside .purpleButton {
+    display: none;
+  }
+  #notsure aside .button {
+    display: inline;
+    text-align: center;
+    margin-left: 400px;
+    width: 190px;
+    height: auto;
+    padding: 12px 0px;
+    background-color: #60609C;
+  }
+  #notsure aside .button:hover {
+    background-color: #5353EE;
+    transition: 0.3s;
   }
 }
 /* =============
