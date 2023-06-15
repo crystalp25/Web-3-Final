@@ -40,11 +40,26 @@
         gap: 16px;
         padding: 0px;
         li{
+            h3{font-size: 27px;}
+            p{font-size: 27px;}
+            h6{font-size: 18px;}
+            a{
+                @include bold();   
+                font-size: 22px;
+                color: $DarkTeal;
+                text-decoration: none;
+                &:hover{ text-decoration: underline;}
+            }
             background-color: $CardPurple;
             padding: 0px 8px;
-            width: 358px;
-            height: 553px;
+            margin: 8px 15px;
+            width: auto;
+            height: 570px;
             border-radius: 8px;
+
+            img{
+                padding-left: 85px;
+            }
             
         }
     }
@@ -85,7 +100,7 @@
                 border-radius: 8px;
 
                 img{
-                    padding-left: 40px;
+                    padding-left: 60px;
                 }
             }
         }

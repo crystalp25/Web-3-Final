@@ -7,16 +7,50 @@ footer{
     flex-direction: column;
     background-color: $StarGrey;
     justify-content: space-between; 
+    padding-top: 20px;
 
     article{
         display: flex;
         flex-direction: row;
         border-bottom: 1px solid $MediumGrey;
+
+        div{
+            display: flex;
+            flex-direction: column;
+            font-size: 18px;
+            
+        }
+
+        #sec1{
+            margin-left: 50px;
+        }
+
+        #sec2{
+            margin-left: 80px;
+        }
     }
 
     aside{
         display: flex;
         flex-direction: column;
+
+        div{
+           p{font-size: 18px;}
+        }
+
+        #sec3{
+            h3{font-size: 27px;}
+        }
+
+        #sec4{
+            h3{font-size: 18px;}
+        }
+    }
+
+    div{
+        img{
+            margin-left: 100px;
+        }
     }
 
 

@@ -432,6 +432,32 @@
       "q" : 90,
       "rq" : 75
     },
+    "\/deploy\/img\/hoverImg\/mobile1.png" : {
+      "ft" : 32768,
+      "iS" : 59481,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/hoverImg\/mobile1.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
+    },
+    "\/deploy\/img\/not sure\/mobile2.png" : {
+      "ft" : 32768,
+      "iS" : 101104,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/not sure\/mobile2.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
+    },
     "\/deploy\/img\/not sure\/notsure.png" : {
       "ft" : 32768,
       "iS" : 456918,

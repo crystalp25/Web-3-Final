@@ -82,10 +82,19 @@ header {
     
         ul{ 
             display: flex;
-            list-style: none;
-            gap: 82px;
-            color: $DarkTeal;
-            a:link{ text-decoration: none;}
+            gap: 90px;
+            li{
+                list-style-type: none; 
+                a{
+                    @include bold(); 
+                    list-style-type: none;
+                    color: $DarkTeal;
+                    font-size: 20px;
+                    text-decoration: none;
+                    &:hover{ text-decoration: underline;}
+     
+                 }
+            }
         }
         display: none;
 
