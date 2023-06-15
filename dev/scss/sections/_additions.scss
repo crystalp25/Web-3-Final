@@ -1,19 +1,31 @@
 #additions{
     @include site-padding; 
+    margin-top: 30px;
     
     article{
         display: flex;
-        justify-content: space-between; 
+        flex-direction: column;
+        align-items: center;
 
         h1{
-           font-size: 40px; 
+           font-size: 35px; 
+           text-align: center;
+           margin-bottom: 20px
         }
 
         #select{
             display: flex;
-            justify-content: space-between; 
+            flex-direction: row;
+            gap: 35px;
+            align-items: center;
+
             h3{
                 font-size: 20px;
+            }
+
+            .purpleButton{
+                padding: 2px 50px;
+
             }
 
         }
@@ -38,10 +50,32 @@
     }
 
     @include lg{
+        article{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+    
+            h1{
+               font-size: 40px; 
+            }
+    
+            #select{
+                display: flex;
+                justify-content: space-between;
+                align-items: center; 
+                h3{
+                    font-size: 20px;
+                }
+    
+            }
+        }
+    
         ul{
             display: flex;
             flex-direction: row;
             justify-content: space-between; 
+            align-items: center;
             gap: 20px;
             padding: 0px;
             li{
