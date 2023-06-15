@@ -1123,14 +1123,22 @@ footer div img {
     padding-right: 32px;
   }
 }
+#community #title {
+  margin-left: 10px;
+}
 #community #title h1 {
-  font-size: 55px;
+  font-size: 40px;
   color: white;
   margin-top: 0px;
+  padding-top: 30px;
+  margin-bottom: 10px;
 }
 #community #title h3 {
-  font-size: 32px;
+  font-size: 18px;
   color: #D9D9D9;
+  width: 382px;
+  line-height: 25px;
+  margin-bottom: 40px;
 }
 #community #options {
   display: flex;
@@ -1138,12 +1146,16 @@ footer div img {
   align-items: center;
 }
 #community #options h1 {
-  font-size: 40px;
+  font-size: 32px;
   color: white;
 }
 #community #options p {
-  font-size: 27px;
+  font-size: 18px;
   color: white;
+  margin-top: 4px;
+}
+#community #options .purpleButton {
+  padding: 2px 40px;
 }
 #community #options aside {
   display: flex;
@@ -1157,24 +1169,161 @@ footer div img {
   justify-content: space-between;
   width: 381px;
 }
-#community article aside {
+#community #options #leather {
+  display: none;
+}
+#community #options #paper {
+  display: none;
+}
+#community #mainB {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0px 20px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid #808080;
+}
+#community article #follow {
+  display: flex;
+  flex-direction: column;
   align-items: center;
+  text-align: center;
   justify-content: space-between;
 }
-#community article aside h1 {
-  font-size: 40px;
+#community article #follow h1 {
+  font-size: 32px;
   color: white;
+}
+#community article #follow #icons {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  margin-bottom: 20px;
 }
 #community article #imgs {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  grid-template-areas: "big     big" "small1  small2";
+  padding-bottom: 20px;
+}
+#community article #imgs #big {
+  grid-area: big;
+}
+#community article #imgs #small1 {
+  padding-top: 5px;
+  grid-area: small1;
+}
+#community article #imgs #small2 {
+  padding-top: 5px;
+  grid-area: small2;
+  height: 176px;
 }
 @media (min-width: 1024px) {
+  #community #title {
+    margin-left: 10px;
+  }
+  #community #title h1 {
+    font-size: 55px;
+  }
+  #community #title h3 {
+    font-size: 32px;
+    color: #D9D9D9;
+    width: 832px;
+    line-height: 44px;
+    margin-bottom: 40px;
+  }
   #community #options {
     display: flex;
     flex-direction: row;
+    align-items: left;
+    text-align: left;
+  }
+  #community #options h1 {
+    font-size: 40px;
+    color: white;
+  }
+  #community #options p {
+    font-size: 27px;
+    color: white;
+    margin-top: 4px;
+  }
+  #community #options .purpleButton {
+    padding: 2px 40px;
+  }
+  #community #options aside {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+    width: 381px;
+    margin-left: 50px;
+    margin-bottom: 20px;
+  }
+  #community #options div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 381px;
+  }
+  #community #options #leather {
+    display: inline;
+  }
+  #community #options #paper {
+    display: inline;
+  }
+  #community #mainB {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2px 48px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    margin-left: 340px;
+    margin-right: 340px;
+    padding-bottom: 40px;
+    border-bottom: none;
+  }
+  #community article #follow {
+    border-top: 1px solid #808080;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  #community article #follow h1 {
+    font-size: 32px;
+    color: white;
+  }
+  #community article #follow #icons {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+  #community article #imgs {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "big     small1" "big    small2";
+    padding-bottom: 20px;
+  }
+  #community article #imgs #big {
+    grid-area: big;
+    width: auto;
+    height: 567px;
+  }
+  #community article #imgs #small1 {
+    padding-top: 5px;
+    grid-area: small1;
+  }
+  #community article #imgs #small2 {
+    padding-top: 5px;
+    grid-area: small2;
+    width: 376px;
+    height: 267px;
   }
 }
 
@@ -1198,21 +1347,21 @@ footer div img {
 #notsure aside div h3 {
   position: absolute;
   top: 10px;
-  left: 100px;
+  left: 120px;
   font-size: 36px;
   line-height: 46px;
 }
 #notsure aside div p {
   position: absolute;
   top: 130px;
-  left: 96px;
+  left: 120px;
   font-size: 18px;
   line-height: 30px;
 }
 #notsure aside .purpleButton {
   position: absolute;
   bottom: 85px;
-  left: 150px;
+  left: 170px;
   padding: 2px 48px;
 }
 #notsure aside .button {
