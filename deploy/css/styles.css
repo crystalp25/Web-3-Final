@@ -1096,6 +1096,8 @@ footer div img {
     display: inline;
     font-size: 55px;
     text-align: center;
+    line-height: 75px;
+    margin-top: 10px;
   }
   #hover h3 {
     display: none;
@@ -1177,14 +1179,54 @@ footer div img {
 }
 
 #notsure {
-  display: flex;
-  flex-direction: row;
+  position: relative;
+  text-align: center;
+  color: white;
 }
-#notsure aside {
-  display: flex;
-  flex-direction: column;
+#notsure #image {
+  display: none;
+}
+#notsure article img {
+  width: 100%;
+}
+#notsure aside div h1 {
+  display: none;
+}
+#notsure aside div h2 {
+  display: none;
+}
+#notsure aside div h3 {
+  position: absolute;
+  top: 10px;
+  left: 100px;
+  font-size: 36px;
+  line-height: 46px;
+}
+#notsure aside div p {
+  position: absolute;
+  top: 130px;
+  left: 96px;
+  font-size: 18px;
+  line-height: 30px;
+}
+#notsure aside .purpleButton {
+  position: absolute;
+  bottom: 85px;
+  left: 150px;
+  padding: 2px 48px;
 }
 
+@media (min-width: 1024px) {
+  #notsure {
+    display: inline;
+    display: flex;
+    flex-direction: row;
+  }
+  #notsure aside {
+    display: flex;
+    flex-direction: column;
+  }
+}
 /* =============
     Footer
 ============= */
