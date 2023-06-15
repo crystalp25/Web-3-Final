@@ -819,12 +819,72 @@ footer div img {
   padding: 0px;
 }
 #additions ul li {
+  /* Customize the label (the container) */
+  /* Hide the browser's default checkbox */
+  /* Create a custom checkbox */
+  /* On mouse-over, add a grey background color */
+  /* When the checkbox is checked, add a blue background */
+  /* Create the checkmark/indicator (hidden when not checked) */
+  /* Show the checkmark when checked */
+  /* Style the checkmark/indicator */
   background-color: #D4DAEC;
   padding: 0px 8px;
-  margin: 8px 15px;
-  width: auto;
+  margin: 8px;
+  width: 420px;
   height: 570px;
   border-radius: 8px;
+}
+#additions ul li .container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+#additions ul li .container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+#additions ul li .checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+}
+#additions ul li .container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+#additions ul li .container input:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+#additions ul li .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+#additions ul li .container input:checked ~ .checkmark:after {
+  display: block;
+}
+#additions ul li .container .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
 }
 #additions ul li h3 {
   font-size: 27px;
@@ -834,6 +894,10 @@ footer div img {
 }
 #additions ul li h6 {
   font-size: 18px;
+  width: 310px;
+  margin-top: 20px;
+  margin-bottom: 25px;
+  line-height: 25px;
 }
 #additions ul li a {
   font-family: "Nunito", sans-serif;
@@ -847,6 +911,9 @@ footer div img {
 }
 #additions ul li img {
   padding-left: 85px;
+}
+#additions ul #last {
+  height: 580px;
 }
 @media (min-width: 1024px) {
   #additions article {
@@ -883,20 +950,24 @@ footer div img {
   #additions ul li img {
     padding-left: 60px;
   }
+  #additions ul #last {
+    height: 552px;
+  }
 }
 
 #features {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 1722px;
+  height: auto;
   width: auto;
-  gap: 32px;
   background-color: #355C65;
   color: white;
 }
 #features h1 {
   text-align: center;
+  width: 350px;
+  margin-bottom: 0px;
 }
 #features #icons {
   display: flex;
@@ -914,22 +985,42 @@ footer div img {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 380px;
   border-bottom: 1px solid #808080;
 }
-#features #icons #four {
-  border-bottom: none;
+#features #icons div img {
+  margin-top: 40px;
+}
+#features #icons div h3 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+#features #icons div p {
+  margin-bottom: 40px;
+  line-height: 25px;
+}
+#features aside .purpleButton {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding: 2px 48px;
 }
 @media (min-width: 1024px) {
   #features {
-    padding: 40px 56px 40px 56px;
     width: auto;
-    height: 711px;
+    height: auto;
+  }
+  #features h1 {
+    text-align: center;
+    width: auto;
+    margin-bottom: 0px;
   }
   #features #icons {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    gap: 100px;
+    align-items: flex-start;
+    gap: 50px;
+    margin-top: 50px;
   }
   #features #icons div {
     display: flex;
@@ -937,10 +1028,58 @@ footer div img {
     align-items: center;
     border-bottom: none;
     border-right: 1px solid #808080;
+    width: auto;
+    height: 368px;
+    padding-right: 50px;
+  }
+  #features #icons div img {
+    margin-top: 0px;
+  }
+  #features #icons div h3 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  #features #icons div p {
+    margin-bottom: 0px;
   }
   #features #icons #four {
     border-right: none;
   }
+  #features aside .purpleButton {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+}
+
+#hover {
+  margin-bottom: 0px;
+  position: relative;
+  text-align: center;
+  color: black;
+}
+#hover h1 {
+  display: none;
+}
+#hover h3 {
+  position: absolute;
+  top: 30px;
+  left: 60px;
+  font-size: 45px;
+  line-height: 55px;
+}
+#hover article {
+  position: absolute;
+  bottom: 270px;
+  left: 160px;
+}
+#hover article .button {
+  padding: 2px 48px;
+}
+#hover aside {
+  display: none;
+}
+#hover div img {
+  width: 100%;
 }
 
 @media (min-width: 1024px) {
@@ -951,10 +1090,24 @@ footer div img {
     height: 945px;
     width: auto;
     padding: 35px 110px;
+    margin-bottom: 21px;
   }
   #hover h1 {
+    display: inline;
     font-size: 55px;
     text-align: center;
+  }
+  #hover h3 {
+    display: none;
+  }
+  #hover article .button {
+    display: none;
+  }
+  #hover aside {
+    display: inline;
+  }
+  #hover div img {
+    display: none;
   }
 }
 #community {
@@ -971,6 +1124,7 @@ footer div img {
 #community #title h1 {
   font-size: 55px;
   color: white;
+  margin-top: 0px;
 }
 #community #title h3 {
   font-size: 32px;

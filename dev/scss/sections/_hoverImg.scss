@@ -1,4 +1,41 @@
+#hover{
+   margin-bottom: 0px;
+   position: relative;
+   text-align: center;
+   color: black;
 
+   h1{
+      display: none;
+   }
+
+   h3{
+      position: absolute;
+      top: 30px;
+      left: 60px;
+      font-size: 45px;
+      line-height: 55px;
+   }
+
+   article{
+      position: absolute;
+      bottom: 270px;
+      left: 160px;
+      .button{
+         padding: 2px 48px;
+      }
+   }
+
+   aside{
+      display: none;
+   }
+
+   div{
+      img{
+         width: 100%;
+      }
+   }
+
+}
 
 
 @include lg{
@@ -9,10 +46,33 @@
    height: 945px;
    width: auto;
    padding: 35px 110px;
+   margin-bottom: 21px;
 
    h1{
+      display: inline;
       font-size: 55px;
       text-align: center;
+   }
+
+   h3{
+      display: none;
+   }
+
+   article{
+   
+      .button{
+        display: none;
+      }
+   }
+
+   aside{
+      display: inline;
+   }
+
+   div{
+      img{
+         display: none;
+      }
    }
 
    }
